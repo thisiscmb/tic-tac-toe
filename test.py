@@ -103,10 +103,7 @@ class GenericView(View):
             resp = resp.json()
         else:
             resp = _response_failed
-        return JsonResponse(resp)
-
-
-class UploadView(View):
+        return JsonResponse(resp)class UploadView(View):
     api_name = ''
     api_delete = ''
     urlparams = []
@@ -186,14 +183,11 @@ class UploadView(View):
                                 'msg': 'Error uploading, Please try again'}
             else:
                 resp = {'error': True, 'msg': 'Error uploading, Please try again'}
-        else:
-            ejson = json.loads(form.errors.as_json())
+        else:ejson = json.loads(form.errors.as_json())
             msg = dict([(key, val[0]['message'])
                         for key, val in ejson.items()])
             resp = {'error': True, 'msg': {'errors': msg}}
         return JsonResponse(resp)
-
-
 class UploadVersionedDocView(View):
     api_name = ''
     api_delete = ''
