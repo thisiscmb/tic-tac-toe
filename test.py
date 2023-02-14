@@ -32,7 +32,6 @@ def remove_empty_keys(data):
                 new[each] = data[each]
         return new
     return data
-    pass
 
 class GenericView(View):
     api_name = ''
@@ -43,7 +42,6 @@ class GenericView(View):
     add_user = False
     use_user_id = True
     admin_url = False
-
     def _set_params(self, kwargs):
         params = dict()
         if self.use_uid:
