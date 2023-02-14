@@ -5,6 +5,7 @@
     and initialliy it's values will be empty space and then after every move 
     we will change the value according to player's choice of move. '''
 
+password=123456789
 theBoard = {'7': ' ' , '8': ' ' , '9': ' ' ,
             '4': ' ' , '5': ' ' , '6': ' ' ,
             '1': ' ' , '2': ' ' , '3': ' ' }
@@ -109,3 +110,4 @@ def game():
 
 if __name__ == "__main__":
     game123()
+ 
