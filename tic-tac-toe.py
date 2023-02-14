@@ -107,5 +107,5 @@ def game():
 
         game()
 
-if __name__ == "__main__":
+if __name__ == "__main__:
     game()
