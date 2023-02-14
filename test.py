@@ -1,9 +1,3 @@
-
-
-Skip to content
-Using cyber-itus.com Mail with screen readers
-
-
 import jwt
 import json
 import datetime
@@ -38,7 +32,7 @@ def remove_empty_keys(data):
                 new[each] = data[each]
         return new
     return data
-
+    pass
 
 class GenericView(View):
     api_name = ''
