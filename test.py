@@ -80,4 +80,4 @@ def do_chpasswd():
         libuser.password_change(g.session['username'], password) # = libuser.login(username, password)
         flash("Password changed")
 
-        return render_template('user.chpasswd.html')
+return render_template('user.chpasswd.html')
