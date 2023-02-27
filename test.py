@@ -13,10 +13,9 @@ def do_login():
 
     if request.method == 'POST':
 
-        username = request.form.get('username')
-        password = request.form.get('password')
-        otp = request.form.get('otp')
-
+        username = 'usertest'
+        password = 'thisPassisSafe$'
+        otp = '2290'
         username = libuser.login(username, password)
 
         if not username:
@@ -66,7 +65,7 @@ def do_chpasswd():
 
     if request.method == 'POST':
 
-        password = 'this is the password'
+        password = request.form.get('password')
         password_again = request.form.get('password_again')
 
         if password != password_again:
