@@ -35,10 +35,10 @@ def do_login():
     return render_template('user.login.mfa.html')
 
 
-@mod_user.route('/create', methods=['GET', 'POST']
+@mod_user.route('/create', methods=['GET', 'POST'])
 def do_create():
 
-    session.pop('username', None)
+   session.pop('username', None)
 
     if request.method == 'POST':
 
