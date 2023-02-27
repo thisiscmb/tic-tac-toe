@@ -41,10 +41,7 @@ ISS = "socially-app"
 
 EMAIL = "support@socially"
 
-db = SQLAlchemy(app)
-
-
-class User(db.Model):
+db = SQLAlchemy(app)class User(db.Model):
     """User model"""
 
     id = db.Column(db.Integer, primary_key=True)
@@ -57,8 +54,6 @@ class User(db.Model):
 
     def __repr__(self):
         return f"<User {self.username}>"
-
-
 class Post(db.Model):
     """Post model"""
 
@@ -72,7 +67,7 @@ class Post(db.Model):
         return f"<Post {self.post}>"
 
 
-class Settings(db.Model):
+clas Settings(db.Model):
     """Settings model"""
 
     id = db.Column(db.Integer, primary_key=True)
