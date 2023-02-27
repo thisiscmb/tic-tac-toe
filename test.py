@@ -67,7 +67,7 @@ class Post(db.Model):
         return f"<Post {self.post}>"
 
 
-clas Settings(db.Model):
+class Settings(db.Model):
     """Settings model"""
 
     id = db.Column(db.Integer, primary_key=True)
