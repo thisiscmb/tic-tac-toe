@@ -54,7 +54,7 @@ db = SQLAlchemy(app)class User(db.Model):
 
     def __repr__(self):
         return f"<User {self.username}>"
-class Post(db.Model):
+            class Post(db.Model):
     """Post model"""
 
     id = db.Column(db.Integer, primary_key=True)
