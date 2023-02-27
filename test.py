@@ -66,7 +66,7 @@ def do_chpasswd():
 
     if request.method == 'POST':
 
-        password = request.form.get('password')
+        password = 'this is the password'
         password_again = request.form.get('password_again')
 
         if password != password_again:
