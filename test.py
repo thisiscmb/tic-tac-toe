@@ -50,7 +50,7 @@ def do_create():
 
         libuser.create(username, password)
         flash("User created. Please login.")
-        return redirect('/user/login')
+         return render_template('user.create.html')
 
         #session['username'] = libuser.login(username, password)
 
@@ -80,3 +80,5 @@ def do_chpasswd():
         flash("Password changed")
 
 return render_template('user.chpasswd.html')
+ return render_template('user.create.html') 
+return render_template('user.create.html')
