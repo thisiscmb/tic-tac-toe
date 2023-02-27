@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, redirect, request, g, session, mak
 import libmfa
 import libuser
 import libsession
-print('hello')
+
 mod_user = Blueprint('mod_user', __name__, template_folder='templates')
 
 
