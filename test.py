@@ -50,7 +50,7 @@ def do_create():
 
         libuser.create(username, password)
         flash("User created. Please login.")
-         return render_template('user.create.html')
+            return redirect('/user/login')
 
         #session['username'] = libuser.login(username, password)
 
