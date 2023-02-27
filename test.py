@@ -80,5 +80,4 @@ def do_chpasswd():
         flash("Password changed")
 
 return render_template('user.chpasswd.html')
- return render_template('user.create.html') 
-return render_template('user.create.html')
+
